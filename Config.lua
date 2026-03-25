@@ -661,7 +661,7 @@ function G:BuildConfigContent(parent)
 
     -- ===== Tracked Items =====
     MakeSectionHeader(parent, "TRACKED ITEMS", y)
-    y = y - 8
+    y = y - 28
 
     -- Column headers
     local colFrame = CreateFrame("Frame", nil, parent)

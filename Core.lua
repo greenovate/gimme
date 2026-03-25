@@ -28,7 +28,7 @@ local defaults = {
         alertChat = true,
         alertSound = true,
         alertScreen = true,
-        autoBuy = false, -- auto purchase vs button
+        autoBuy = true, -- auto purchase vs button
     },
 }
 
