@@ -1,0 +1,6 @@
+package-as: gimme
+
+ignore:
+  - .git
+  - .gitignore
+  - "*.zip"
