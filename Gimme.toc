@@ -2,7 +2,7 @@
 ## Title: Gimme
 ## Notes: Track any item, get alerts when you're low, and auto-restock from vendors.
 ## Author: Evildz on Nightslayer
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: GimmeDB
 
 Libs\LibStub\LibStub.lua

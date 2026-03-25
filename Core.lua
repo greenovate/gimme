@@ -33,7 +33,13 @@ local defaults = {
 }
 
 function G:OnInitialize()
-    self.db = LibStub("AceDB-3.0"):New("GimmeDB", defaults, true)
+    self.db = LibStub("AceDB-3.0"):New("GimmeDB", defaults, "char")
+
+    -- Migrate from shared "Default" profile to per-character
+    if self.db:GetCurrentProfile() == "Default" then
+        local charKey = UnitName("player") .. " - " .. GetRealmName()
+        self.db:SetProfile(charKey)
+    end
 
     _, self.playerClass = UnitClass("player")
     self.playerClass = self.playerClass or "UNKNOWN"
